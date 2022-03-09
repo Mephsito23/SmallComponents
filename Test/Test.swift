@@ -52,9 +52,9 @@ struct TestEntryView: View {
                 .scaledToFill()
                 .frame(width: 80, height: 120)
             VStack(alignment: .leading, spacing: 10) {
-                Text("To be both a speaker of words and a doer of deeds.")
+                Text(entry.saying.en)
                     .font(.system(size: 18))
-                Text("既当演说家，又做实干家")
+                Text(entry.saying.zh)
                     .font(.system(size: 15))
                     .foregroundColor(.gray)
             }
